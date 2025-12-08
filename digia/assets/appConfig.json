@@ -1,0 +1,908 @@
+{
+  "appSettings": {
+    "initialRoute": "product_detail_page-ZyvSly",
+    "createdAt": "2025-12-08T19:37:22.586Z",
+    "updatedAt": "2025-12-08T19:50:13.087Z"
+  },
+  "pages": {
+    "product_detail_page-ZyvSly": {
+      "uid": "product_detail_page-ZyvSly",
+      "actions": {
+        "onPageLoadAction": null,
+        "onPageLoad": {
+          "type": "Action.buildPage"
+        },
+        "onBackPress": null
+      },
+      "inputArgs": null,
+      "variables": null,
+      "layout": {
+        "root": {
+          "category": "widget",
+          "type": "fw/scaffold",
+          "props": {
+            "scaffoldBackgroundColor": "#FFFFFF",
+            "enableSafeArea": true,
+            "resizeToAvoidBottomInset": true
+          },
+          "containerProps": {
+            "visibility": true,
+            "style": {
+              "border": {
+                "borderType": {}
+              }
+            }
+          },
+          "parentProps": null,
+          "children": {
+            "body": [
+              {
+                "category": "widget",
+                "type": "digia/column",
+                "props": {
+                  "mainAxisAlignment": "start",
+                  "crossAxisAlignment": "stretch",
+                  "mainAxisSize": "max",
+                  "isScrollable": false,
+                  "spacing": 0
+                },
+                "containerProps": {
+                  "visibility": true,
+                  "style": {
+                    "border": {
+                      "borderType": {}
+                    }
+                  }
+                },
+                "parentProps": null,
+                "children": {
+                  "children": [
+                    {
+                      "category": "widget",
+                      "type": "digia/row",
+                      "props": {
+                        "mainAxisAlignment": "spaceBetween",
+                        "crossAxisAlignment": "center",
+                        "mainAxisSize": "max",
+                        "isScrollable": false
+                      },
+                      "containerProps": {
+                        "visibility": true,
+                        "style": {
+                          "padding": "16,12,16,12",
+                          "border": {
+                            "borderType": {}
+                          },
+                          "height": "60"
+                        }
+                      },
+                      "parentProps": {
+                        "expansion": {
+                          "type": "none"
+                        }
+                      },
+                      "children": {
+                        "children": [
+                          {
+                            "category": "widget",
+                            "type": "digia/icon",
+                            "props": {
+                              "iconData": {
+                                "pack": "material",
+                                "key": "arrow_back"
+                              },
+                              "iconSize": 24,
+                              "iconColor": "#1F2937"
+                            },
+                            "containerProps": {
+                              "visibility": true,
+                              "style": {
+                                "border": {
+                                  "borderType": {}
+                                }
+                              }
+                            },
+                            "parentProps": {
+                              "expansion": {}
+                            },
+                            "children": {},
+                            "dataRef": null,
+                            "varName": "backButton",
+                            "initStateDefs": null,
+                            "componentArgs": null
+                          },
+                          {
+                            "category": "widget",
+                            "type": "digia/text",
+                            "props": {
+                              "text": "Premium Headphones",
+                              "textStyle": {
+                                "fontToken": {
+                                  "font": {
+                                    "fontFamily": "Poppins",
+                                    "weight": "medium",
+                                    "size": 16
+                                  }
+                                },
+                                "textColor": "#1F2937"
+                              },
+                              "alignment": "center",
+                              "overflow": "clip"
+                            },
+                            "containerProps": {
+                              "visibility": true,
+                              "style": {
+                                "border": {
+                                  "borderType": {}
+                                }
+                              }
+                            },
+                            "parentProps": {
+                              "expansion": {}
+                            },
+                            "children": {},
+                            "dataRef": null,
+                            "varName": "headerTitle",
+                            "initStateDefs": null,
+                            "componentArgs": null
+                          },
+                          {
+                            "category": "widget",
+                            "type": "digia/icon",
+                            "props": {
+                              "iconData": {
+                                "pack": "material",
+                                "key": "shopping_cart"
+                              },
+                              "iconSize": 24,
+                              "iconColor": "#1F2937"
+                            },
+                            "containerProps": {
+                              "visibility": true,
+                              "style": {
+                                "border": {
+                                  "borderType": {}
+                                }
+                              }
+                            },
+                            "parentProps": {
+                              "expansion": {}
+                            },
+                            "children": {},
+                            "dataRef": null,
+                            "varName": "cartButton",
+                            "initStateDefs": null,
+                            "componentArgs": null
+                          }
+                        ]
+                      },
+                      "dataRef": null,
+                      "varName": "headerRow",
+                      "initStateDefs": null,
+                      "componentArgs": null
+                    },
+                    {
+                      "category": "widget",
+                      "type": "digia/column",
+                      "props": {
+                        "mainAxisAlignment": "start",
+                        "crossAxisAlignment": "center",
+                        "mainAxisSize": "min",
+                        "isScrollable": true,
+                        "spacing": 0
+                      },
+                      "containerProps": {
+                        "visibility": true,
+                        "style": {
+                          "border": {
+                            "borderType": {}
+                          }
+                        }
+                      },
+                      "parentProps": {
+                        "expansion": {
+                          "type": "tight",
+                          "flexValue": 1
+                        }
+                      },
+                      "children": {
+                        "children": [
+                          {
+                            "category": "widget",
+                            "type": "digia/container",
+                            "props": {
+                              "childAlignment": "center",
+                              "width": "100%",
+                              "height": "350",
+                              "padding": "20,20,20,20",
+                              "color": "#F3F4F6",
+                              "gradiant": {},
+                              "border": {
+                                "borderGradiant": {},
+                                "borderType": {}
+                              }
+                            },
+                            "containerProps": {
+                              "visibility": true,
+                              "style": {
+                                "border": {
+                                  "borderType": {}
+                                }
+                              }
+                            },
+                            "parentProps": {
+                              "expansion": {}
+                            },
+                            "children": {
+                              "child": [
+                                {
+                                  "category": "widget",
+                                  "type": "digia/image",
+                                  "props": {
+                                    "alignment": "center",
+                                    "imageType": "auto",
+                                    "src": {
+                                      "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Headphones_1.jpg/1200px-Headphones_1.jpg"
+                                    },
+                                    "fit": "cover",
+                                    "opacity": 1,
+                                    "errorImage": {}
+                                  },
+                                  "containerProps": {
+                                    "visibility": true,
+                                    "style": {
+                                      "border": {
+                                        "borderType": {}
+                                      },
+                                      "width": "100%",
+                                      "height": "100%"
+                                    }
+                                  },
+                                  "parentProps": null,
+                                  "children": {},
+                                  "dataRef": null,
+                                  "varName": "productImage",
+                                  "initStateDefs": null,
+                                  "componentArgs": null
+                                }
+                              ]
+                            },
+                            "dataRef": null,
+                            "varName": "imageContainer",
+                            "initStateDefs": null,
+                            "componentArgs": null
+                          },
+                          {
+                            "category": "widget",
+                            "type": "digia/column",
+                            "props": {
+                              "mainAxisAlignment": "start",
+                              "crossAxisAlignment": "start",
+                              "mainAxisSize": "min",
+                              "isScrollable": false,
+                              "spacing": 8
+                            },
+                            "containerProps": {
+                              "visibility": true,
+                              "style": {
+                                "padding": "24,24,24,24",
+                                "border": {
+                                  "borderType": {}
+                                },
+                                "width": "100%"
+                              }
+                            },
+                            "parentProps": {
+                              "expansion": {}
+                            },
+                            "children": {
+                              "children": [
+                                {
+                                  "category": "widget",
+                                  "type": "digia/row",
+                                  "props": {
+                                    "mainAxisAlignment": "start",
+                                    "crossAxisAlignment": "start",
+                                    "mainAxisSize": "max",
+                                    "isScrollable": false
+                                  },
+                                  "containerProps": {
+                                    "visibility": true,
+                                    "style": {
+                                      "border": {
+                                        "borderType": {}
+                                      },
+                                      "width": "100%"
+                                    }
+                                  },
+                                  "parentProps": {
+                                    "expansion": {}
+                                  },
+                                  "children": {
+                                    "children": [
+                                      {
+                                        "category": "widget",
+                                        "type": "digia/text",
+                                        "props": {
+                                          "text": "Premium Headphones",
+                                          "textStyle": {
+                                            "fontToken": {
+                                              "font": {
+                                                "fontFamily": "Poppins",
+                                                "weight": "bold",
+                                                "size": 22,
+                                                "height": 1.2
+                                              }
+                                            },
+                                            "textColor": "#111827"
+                                          },
+                                          "maxLines": 2,
+                                          "alignment": "left"
+                                        },
+                                        "containerProps": {
+                                          "visibility": true,
+                                          "style": {
+                                            "border": {
+                                              "borderType": {}
+                                            },
+                                            "width": "70%"
+                                          }
+                                        },
+                                        "parentProps": {
+                                          "expansion": {}
+                                        },
+                                        "children": {},
+                                        "dataRef": null,
+                                        "varName": "productTitle",
+                                        "initStateDefs": null,
+                                        "componentArgs": null
+                                      },
+                                      {
+                                        "category": "widget",
+                                        "type": "fw/sized_box",
+                                        "props": {
+                                          "width": "10"
+                                        },
+                                        "containerProps": {
+                                          "visibility": true,
+                                          "style": {
+                                            "border": {
+                                              "borderType": {}
+                                            }
+                                          }
+                                        },
+                                        "parentProps": {
+                                          "expansion": {
+                                            "type": "tight",
+                                            "flexValue": 1
+                                          }
+                                        },
+                                        "children": {},
+                                        "dataRef": null,
+                                        "varName": "titleSpacer",
+                                        "initStateDefs": null,
+                                        "componentArgs": null
+                                      },
+                                      {
+                                        "category": "widget",
+                                        "type": "digia/container",
+                                        "props": {
+                                          "padding": "6,4,6,4",
+                                          "color": "#FEF3C7",
+                                          "gradiant": {},
+                                          "borderRadius": "6,6,6,6",
+                                          "border": {
+                                            "borderGradiant": {},
+                                            "borderType": {}
+                                          }
+                                        },
+                                        "containerProps": {
+                                          "visibility": true,
+                                          "style": {
+                                            "border": {
+                                              "borderType": {}
+                                            }
+                                          }
+                                        },
+                                        "parentProps": {
+                                          "expansion": {}
+                                        },
+                                        "children": {
+                                          "child": [
+                                            {
+                                              "category": "widget",
+                                              "type": "digia/row",
+                                              "props": {
+                                                "crossAxisAlignment": "center",
+                                                "mainAxisSize": "min",
+                                                "spacing": 4
+                                              },
+                                              "containerProps": {
+                                                "visibility": true,
+                                                "style": {
+                                                  "border": {
+                                                    "borderType": {}
+                                                  }
+                                                }
+                                              },
+                                              "parentProps": null,
+                                              "children": {
+                                                "children": [
+                                                  {
+                                                    "category": "widget",
+                                                    "type": "digia/icon",
+                                                    "props": {
+                                                      "iconData": {
+                                                        "pack": "material",
+                                                        "key": "star"
+                                                      },
+                                                      "iconSize": 16,
+                                                      "iconColor": "#D97706"
+                                                    },
+                                                    "containerProps": {
+                                                      "visibility": true,
+                                                      "style": {
+                                                        "border": {
+                                                          "borderType": {}
+                                                        }
+                                                      }
+                                                    },
+                                                    "parentProps": {
+                                                      "expansion": {}
+                                                    },
+                                                    "children": {},
+                                                    "dataRef": null,
+                                                    "varName": "starIcon",
+                                                    "initStateDefs": null,
+                                                    "componentArgs": null
+                                                  },
+                                                  {
+                                                    "category": "widget",
+                                                    "type": "digia/text",
+                                                    "props": {
+                                                      "text": "4.8",
+                                                      "textStyle": {
+                                                        "fontToken": {
+                                                          "font": {
+                                                            "fontFamily": "Poppins",
+                                                            "weight": "semiBold",
+                                                            "size": 14
+                                                          }
+                                                        },
+                                                        "textColor": "#D97706"
+                                                      }
+                                                    },
+                                                    "containerProps": {
+                                                      "visibility": true,
+                                                      "style": {
+                                                        "border": {
+                                                          "borderType": {}
+                                                        }
+                                                      }
+                                                    },
+                                                    "parentProps": {
+                                                      "expansion": {}
+                                                    },
+                                                    "children": {},
+                                                    "dataRef": null,
+                                                    "varName": "ratingValue",
+                                                    "initStateDefs": null,
+                                                    "componentArgs": null
+                                                  }
+                                                ]
+                                              },
+                                              "dataRef": null,
+                                              "varName": "ratingInnerRow",
+                                              "initStateDefs": null,
+                                              "componentArgs": null
+                                            }
+                                          ]
+                                        },
+                                        "dataRef": null,
+                                        "varName": "ratingBadge",
+                                        "initStateDefs": null,
+                                        "componentArgs": null
+                                      }
+                                    ]
+                                  },
+                                  "dataRef": null,
+                                  "varName": "titleRatingRow",
+                                  "initStateDefs": null,
+                                  "componentArgs": null
+                                },
+                                {
+                                  "category": "widget",
+                                  "type": "digia/text",
+                                  "props": {
+                                    "text": "$299.00",
+                                    "textStyle": {
+                                      "fontToken": {
+                                        "font": {
+                                          "fontFamily": "Poppins",
+                                          "weight": "bold",
+                                          "size": 28
+                                        }
+                                      },
+                                      "textColor": "#059669"
+                                    },
+                                    "alignment": "left"
+                                  },
+                                  "containerProps": {
+                                    "visibility": true,
+                                    "style": {
+                                      "border": {
+                                        "borderType": {}
+                                      }
+                                    }
+                                  },
+                                  "parentProps": {
+                                    "expansion": {}
+                                  },
+                                  "children": {},
+                                  "dataRef": null,
+                                  "varName": "productPrice",
+                                  "initStateDefs": null,
+                                  "componentArgs": null
+                                },
+                                {
+                                  "category": "widget",
+                                  "type": "digia/styledHorizontalDivider",
+                                  "props": {
+                                    "thickness": 1,
+                                    "colorType": {
+                                      "color": "#E5E7EB",
+                                      "gradiant": {}
+                                    },
+                                    "borderPattern": {}
+                                  },
+                                  "containerProps": {
+                                    "visibility": true,
+                                    "style": {
+                                      "border": {
+                                        "borderType": {}
+                                      }
+                                    }
+                                  },
+                                  "parentProps": {
+                                    "expansion": {}
+                                  },
+                                  "children": {},
+                                  "dataRef": null,
+                                  "varName": "divider",
+                                  "initStateDefs": null,
+                                  "componentArgs": null
+                                },
+                                {
+                                  "category": "widget",
+                                  "type": "digia/text",
+                                  "props": {
+                                    "text": "Description",
+                                    "textStyle": {
+                                      "fontToken": {
+                                        "font": {
+                                          "fontFamily": "Poppins",
+                                          "weight": "semiBold",
+                                          "size": 18
+                                        }
+                                      },
+                                      "textColor": "#111827"
+                                    },
+                                    "alignment": "left"
+                                  },
+                                  "containerProps": {
+                                    "visibility": true,
+                                    "style": {
+                                      "border": {
+                                        "borderType": {}
+                                      }
+                                    }
+                                  },
+                                  "parentProps": {
+                                    "expansion": {}
+                                  },
+                                  "children": {},
+                                  "dataRef": null,
+                                  "varName": "descriptionHeader",
+                                  "initStateDefs": null,
+                                  "componentArgs": null
+                                },
+                                {
+                                  "category": "widget",
+                                  "type": "digia/text",
+                                  "props": {
+                                    "text": "Experience high-fidelity audio with these premium headphones. Featuring active noise cancellation, and ultra-comfortable ear cushions for long listening sessions. Perfect for studio work, commuting, or just relaxing with your favorite tunes.",
+                                    "textStyle": {
+                                      "fontToken": {
+                                        "font": {
+                                          "fontFamily": "Poppins",
+                                          "weight": "regular",
+                                          "size": 14,
+                                          "height": 1.5
+                                        }
+                                      },
+                                      "textColor": "#6B7280"
+                                    },
+                                    "alignment": "left"
+                                  },
+                                  "containerProps": {
+                                    "visibility": true,
+                                    "style": {
+                                      "margin": "8,0,0,0",
+                                      "border": {
+                                        "borderType": {}
+                                      }
+                                    }
+                                  },
+                                  "parentProps": {
+                                    "expansion": {}
+                                  },
+                                  "children": {},
+                                  "dataRef": null,
+                                  "varName": "descriptionText",
+                                  "initStateDefs": null,
+                                  "componentArgs": null
+                                }
+                              ]
+                            },
+                            "dataRef": null,
+                            "varName": "detailsSection",
+                            "initStateDefs": null,
+                            "componentArgs": null
+                          }
+                        ]
+                      },
+                      "dataRef": null,
+                      "varName": "scrollableContent",
+                      "initStateDefs": null,
+                      "componentArgs": null
+                    },
+                    {
+                      "category": "widget",
+                      "type": "digia/container",
+                      "props": {
+                        "padding": "16,16,16,16",
+                        "color": "#FFFFFF",
+                        "gradiant": {},
+                        "shadow": [
+                          {
+                            "offset": {
+                              "x": 0,
+                              "y": -4
+                            },
+                            "blur": 10,
+                            "color": "#1A000000"
+                          }
+                        ],
+                        "border": {
+                          "borderWidth": 1,
+                          "borderColor": "#F3F4F6",
+                          "borderGradiant": {},
+                          "borderType": {
+                            "borderPattern": "solid"
+                          }
+                        }
+                      },
+                      "containerProps": {
+                        "visibility": true,
+                        "style": {
+                          "border": {
+                            "borderType": {}
+                          }
+                        }
+                      },
+                      "parentProps": {
+                        "expansion": {
+                          "type": "none"
+                        }
+                      },
+                      "children": {
+                        "child": [
+                          {
+                            "category": "widget",
+                            "type": "digia/button",
+                            "props": {
+                              "buttonState": "default",
+                              "isDisabled": false,
+                              "disabledStyle": {},
+                              "defaultStyle": {
+                                "backgroundColor": "#111827",
+                                "padding": "0,0,0,0",
+                                "height": "50",
+                                "width": "100%"
+                              },
+                              "text": {
+                                "text": "Add to Cart",
+                                "textStyle": {
+                                  "fontToken": {
+                                    "font": {}
+                                  },
+                                  "textColor": "#FFFFFF"
+                                }
+                              },
+                              "shape": {
+                                "value": "roundedRect",
+                                "borderRadius": "12,12,12,12"
+                              },
+                              "leadingIcon": {
+                                "iconData": {
+                                  "pack": "material",
+                                  "key": "shopping_bag"
+                                },
+                                "iconSize": 20,
+                                "iconColor": "#FFFFFF"
+                              },
+                              "trailingIcon": {
+                                "iconData": {}
+                              }
+                            },
+                            "containerProps": {
+                              "visibility": true,
+                              "style": {
+                                "border": {
+                                  "borderType": {}
+                                }
+                              }
+                            },
+                            "parentProps": null,
+                            "children": {},
+                            "dataRef": null,
+                            "varName": "addToCartButton",
+                            "initStateDefs": null,
+                            "componentArgs": null
+                          }
+                        ]
+                      },
+                      "dataRef": null,
+                      "varName": "footerContainer",
+                      "initStateDefs": null,
+                      "componentArgs": null
+                    }
+                  ]
+                },
+                "dataRef": null,
+                "varName": "mainLayoutColumn",
+                "initStateDefs": null,
+                "componentArgs": null
+              }
+            ]
+          },
+          "dataRef": null,
+          "varName": "productPageScaffold",
+          "initStateDefs": null,
+          "componentArgs": null
+        }
+      }
+    }
+  },
+  "components": {},
+  "rest": {
+    "defaultHeaders": {},
+    "resources": {}
+  },
+  "theme": {
+    "colors": {
+      "light": {
+        "brandPrimary": "#4945FF",
+        "brandSecondary": "#FF751F",
+        "contentPrimary": "#000000",
+        "contentSecondary": "#5F5F5F",
+        "contentTertiary": "#E8E8E8",
+        "backgroundPrimary": "#FFFFFF",
+        "backgroundSecondary": "#F5F5F5",
+        "backgroundTertiary": "#E8E8E8",
+        "accent1": "#2B71FF",
+        "accent2": "#FF22B5",
+        "success": "#25A511",
+        "error": "#F01331",
+        "warning": "#EEB600",
+        "info": "#2B71FF"
+      },
+      "dark": {
+        "brandPrimary": "#7D7AFF",
+        "brandSecondary": "#FF8B3D",
+        "contentPrimary": "#FFFFFF",
+        "contentSecondary": "#AFAFAF",
+        "contentTertiary": "#3A3A3A",
+        "backgroundPrimary": "#000000",
+        "backgroundSecondary": "#1A1A1A",
+        "backgroundTertiary": "#2A2A2A",
+        "accent1": "#539DFF",
+        "accent2": "#FF4DC1",
+        "success": "#48D950",
+        "error": "#FF4D4D",
+        "warning": "#FFCC00",
+        "info": "#539DFF"
+      }
+    },
+    "fonts": {
+      "displayLarge": {
+        "size": 48,
+        "weight": "semiBold",
+        "font-family": "Inter",
+        "height": 1.15,
+        "style": "normal"
+      },
+      "displayMedium": {
+        "size": 40,
+        "weight": "semiBold",
+        "font-family": "Inter",
+        "height": 1.15,
+        "style": "normal"
+      },
+      "displaySmall": {
+        "size": 32,
+        "weight": "semiBold",
+        "font-family": "Inter",
+        "height": 1.15,
+        "style": "normal"
+      },
+      "headingLarge": {
+        "size": 28,
+        "weight": "medium",
+        "font-family": "Inter",
+        "height": 1.25,
+        "style": "normal"
+      },
+      "headingMedium": {
+        "size": 24,
+        "weight": "medium",
+        "font-family": "Inter",
+        "height": 1.25,
+        "style": "normal"
+      },
+      "headingSmall": {
+        "size": 20,
+        "weight": "medium",
+        "font-family": "Inter",
+        "height": 1.25,
+        "style": "normal"
+      },
+      "bodyLarge": {
+        "size": 18,
+        "weight": "regular",
+        "font-family": "Inter",
+        "height": 1.25,
+        "style": "normal"
+      },
+      "bodyDefault": {
+        "size": 16,
+        "weight": "regular",
+        "font-family": "Inter",
+        "height": 1.25,
+        "style": "normal"
+      },
+      "bodySmall": {
+        "size": 14,
+        "weight": "regular",
+        "font-family": "Inter",
+        "height": 1.25,
+        "style": "normal"
+      },
+      "bodyXSmall": {
+        "size": 12,
+        "weight": "regular",
+        "font-family": "Inter",
+        "height": 1.25,
+        "style": "normal"
+      },
+      "default": {
+        "size": 16,
+        "weight": "regular",
+        "font-family": {
+          "primary": "Inter",
+          "secondary": "Inter"
+        },
+        "height": 1.25,
+        "style": "normal"
+      }
+    }
+  },
+  "appState": [],
+  "widgets": [],
+  "environment": {
+    "name": "Development",
+    "kind": "development",
+    "variables": null
+  },
+  "functionsFilePath": null
+}
