@@ -1,16 +1,42 @@
-# shorebird
+# Shorebird app
 
-A new Flutter project.
+This is a Flutter app configured for **Shorebird** over-the-air (OTA) updates.
 
-## Getting Started
+It is intentionally close to a vanilla Flutter template, with the main difference being Shorebird integration and the `shorebird.yaml` asset.
 
-This project is a starting point for a Flutter application.
+## Key characteristics
 
-A few resources to get you started if this is your first Flutter project:
+- **Update model**
+  - Built once as a Shorebird-enabled binary and then updated with Shorebird `release` and `patch` commands.
+- **Config**
+  - Tracks `shorebird.yaml` as a Flutter asset (see `pubspec.yaml`).
+- **Baseline**
+  - Mostly matches a standard `flutter create` template so you can compare it against the `vanilla` app.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Run with Shorebird (dev)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+cd shorebird
+shorebird flutter pub get
+shorebird flutter run
+```
+
+This uses Shorebird’s Flutter wrapper so the app is compatible with OTA patches.
+
+## Ship a release and patch
+
+From the `shorebird/` directory:
+
+```bash
+shorebird release <platform>   # e.g. android, ios
+shorebird patch <platform>
+```
+
+Refer to the official Shorebird docs for details:
+
+- https://docs.shorebird.dev
+
+## How this compares
+
+- **Versus Digia**: Shorebird adds OTA updates while Digia uses SDUI.
+- **Versus Vanilla**: this app stays close to the vanilla template but adds Shorebird-specific configuration and commands.

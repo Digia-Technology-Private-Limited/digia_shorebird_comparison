@@ -138,7 +138,7 @@ packages:
     source: hosted
     version: "1.0.2"
   cupertino_icons:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: cupertino_icons
       sha256: ba631d1c7f7bef6b729a622b7b752645a2d076dba9976925b8f25725a30e1ee6
@@ -172,10 +172,11 @@ packages:
   digia_ui:
     dependency: "direct main"
     description:
-      name: digia_ui
-      sha256: f5da2d8a2e17da1462f7215e23c253d99241b59973854767d5a4329ded838801
-      url: "https://pub.dev"
-    source: hosted
+      path: "."
+      ref: "feature/trimmed-rc1"
+      resolved-ref: "1ecc1c55955cec80a490af8e384899cfcabc38b1"
+      url: "git@github.com:Digia-Technology-Private-Limited/digia_ui.git"
+    source: git
     version: "1.4.0"
   dio:
     dependency: transitive
@@ -376,14 +377,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "8.2.14"
-  font_awesome_flutter:
-    dependency: transitive
-    description:
-      name: font_awesome_flutter
-      sha256: d3a89184101baec7f4600d58840a764d2ef760fe1c5a20ef9e6b0e9b24a07a3a
-      url: "https://pub.dev"
-    source: hosted
-    version: "10.8.0"
   highlight:
     dependency: transitive
     description:
@@ -1350,5 +1343,5 @@ packages:
     source: hosted
     version: "3.1.2"
 sdks:
-  dart: ">=3.9.2 <4.0.0"
+  dart: ">=3.9.0 <4.0.0"
   flutter: ">=3.35.0"

@@ -1,16 +1,37 @@
-# vanilla
+# Vanilla app
 
-A new Flutter project.
+This is a plain **vanilla** Flutter app created with `flutter create`.
 
-## Getting Started
+It serves as the clean baseline for comparison against the **Digia** app and the **Shorebird** app in this repository.
 
-This project is a starting point for a Flutter application.
+## Key characteristics
 
-A few resources to get you started if this is your first Flutter project:
+- **No custom dependencies**
+  - Uses only the core `flutter` SDK dependencies defined in `pubspec.yaml`.
+- **No Digia UI**
+  - Does *not* depend on `digia_ui` or bundle Digia-specific assets.
+- **No Shorebird**
+  - Does *not* include Shorebird configuration or OTA update support.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Run locally
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+cd vanilla
+flutter pub get
+flutter run
+```
+
+## Build for release
+
+From `vanilla/`:
+
+```bash
+flutter build apk
+flutter build ios
+flutter build web
+```
+
+## How this compares
+
+- **Versus Digia**: this is the minimal template; Digia adds `digia_ui` and app-specific assets.
+- **Versus Shorebird**: this app has no Shorebird integration and uses the standard Flutter update model only.
